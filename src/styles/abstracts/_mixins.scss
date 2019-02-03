@@ -1,0 +1,15 @@
+//brakpoints
+$small: 767px;
+$medium: 991px;
+
+@mixin breakpoint-sm {
+  @media (max-width: $small) {
+    @content;
+  }
+}
+
+@mixin breakpoint-md {
+  @media (max-width: $medium) {
+    @content;
+  }
+}

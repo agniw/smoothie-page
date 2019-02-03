@@ -1,0 +1,11 @@
+html {
+  font-size: 62.5%;
+
+  @include breakpoint-md {
+    font-size: 50%;
+  }
+
+  @include breakpoint-sm {
+    font-size: 30%;
+  }
+}

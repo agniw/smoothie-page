@@ -1,0 +1,46 @@
+.signup {
+  &__heading {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    line-height: 1.5;
+
+    @include breakpoint-sm {
+      font-size: 3rem;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__form {
+    display: flex;
+    border: 1px solid $grey-primary;
+    height: 5rem;
+    border-radius: 3px;
+
+    input {
+      width: calc(100% - 30px);
+      height: 100%;
+      font-size: 1.6rem;
+      padding: 0 1.5rem;
+      border: none;
+
+      @include breakpoint-sm {
+        font-size: 3rem;
+      }
+    }
+
+    button[type="submit"] {
+      height: 100%;
+      width: 30px;
+      padding: 0;
+      font-size: 2rem;
+      color: $grey-primary;
+      border: none;
+
+      @include breakpoint-sm {
+        font-size: 3rem;
+      }
+    }
+  }
+}
